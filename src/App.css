@@ -2,6 +2,7 @@
     display: grid;
     width: 1200px;
     margin: 0 auto;
+    padding-top: 10px;
     grid-template-areas:
     " h h"
     "n c";
@@ -11,6 +12,8 @@
 .header {
     grid-area: h;
     background-color: #2bd72b;
+    padding-top: 10px;
+    overflow: hidden;
 }
 .nav {
     grid-area: n;
@@ -21,5 +24,7 @@
     background-color: #0f2fd0;
 }
 .logo {
+
     width: 200px;
+    margin-top: -50px;
 }
