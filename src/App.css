@@ -6,25 +6,9 @@
     grid-template-areas:
     " h h"
     "n c";
+
+
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
 }
-.header {
-    grid-area: h;
-    background-color: #2bd72b;
-    padding-top: 10px;
-    overflow: hidden;
-}
-.nav {
-    grid-area: n;
-    background-color: #bd9de2;
-}
-.content {
-    grid-area: c;
-    background-color: #0f2fd0;
-}
-.logo {
 
-    width: 200px;
-    margin-top: -50px;
-}

@@ -1,0 +1,11 @@
+.header {
+    grid-area: h;
+    background-color: #2bd72b;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.logo {
+
+    width: 200px;
+    margin-top: -50px;
+}
