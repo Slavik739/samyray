@@ -5,8 +5,8 @@ const NavBar = () => {
     return (
         <nav className={s.nav}>
             <ul>
-                <div className={s.item}><a href="#/">Profile</a></div>
-                <div className={s.item}><a href="#/">Messages</a></div>
+                <div className={s.item}><a href="/profile">Profile</a></div>
+                <div className={s.item}><a href="/dialogs">Messages</a></div>
                 <div className={s.item}><a href="#/">News</a></div>
                 <div className={s.item}><a href="#/">Music</a></div>
                 <div className={s.item+s.active}><a href="#/">Settings</a></div>
