@@ -1,0 +1,25 @@
+
+.myPost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*width: 750px;*/
+    padding: 0 200px;
+}
+.myPost__input{
+    background: bisque;
+}
+.myPost__btn {
+    width: 120px;
+    height: 30px;
+    margin: 15px auto;
+    color: #0c0101;
+    background: bisque;
+}
+
+.myPost__header{
+    color: #850202;
+    font-size: 20px;
+    font-weight: 500;
+}

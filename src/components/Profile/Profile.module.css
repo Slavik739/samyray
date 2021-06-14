@@ -1,0 +1,25 @@
+.profile {
+    grid-area: c;
+    background-color: #5368d6;
+    width: 1000px;
+}
+.profile__content{
+    position: relative;
+    overflow:hidden;
+    width:1000px;
+    height:400px;
+}
+.profile__logo{
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform:translate(-50%,-50%);
+    /*width:300px;*/
+    /*height:300px;*/
+    /*object-fit:cover;*/
+}
+.profile__des{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 22px;
+}
