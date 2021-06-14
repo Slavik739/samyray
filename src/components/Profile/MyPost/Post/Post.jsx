@@ -8,7 +8,7 @@ const Post = (props) => {
                 <img className={s.logoImage} src="https://www.crazyhippos.in/wp-content/uploads/2018/02/logo-23.jpg"
                      alt=""/>
                 <div>
-                    <span>like - {props.like}</span>
+                    <span>like - {props.likesCount}</span>
                 </div>
             </div>
             <div className={s.text}>{props.massage}</div>
