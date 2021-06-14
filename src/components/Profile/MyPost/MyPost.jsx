@@ -8,7 +8,7 @@ const MyPost = () => {
 
         <div className={s.myPost}>
             <p className={s.myPost__header}>My posts</p>
-            <textarea className={s.myPost__input}  cols="50" rows="10" placeholder="Введите сообщение">А что</textarea>
+            <textarea className={s.myPost__input}  cols="50" rows="10" placeholder="Введите сообщение"></textarea>
             <button className={s.myPost__btn}>Add post</button>
         </div>
         <div className={s.posts}>

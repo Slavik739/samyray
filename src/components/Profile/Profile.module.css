@@ -1,8 +1,4 @@
-.profile {
-    grid-area: c;
-    background-color: #5368d6;
-    width: 1000px;
-}
+
 .profile__content{
     position: relative;
     overflow:hidden;
