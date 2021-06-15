@@ -1,10 +1,27 @@
 .nav {
-    grid-area: n;
-    background-color: #bd9de2;
+  grid-area: n;
+  background: linear-gradient(to top, bisque, #03557a);
+  display: flex;
+
 }
+
 .item {
-    color: #fff;
+  width: 100px;
+  padding: 5px;
+  margin: 5px auto;
+  border-bottom: 1px solid bisque;
+
 }
-.active{
-    color:gold;
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: black;
+}
+
+.item a.active {
+  color: gold;
 }

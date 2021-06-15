@@ -1,11 +1,11 @@
 .header {
     grid-area: h;
-    background-color: #2bd72b;
+    background: linear-gradient(to right, #03557a, bisque);
     padding-top: 10px;
     overflow: hidden;
 }
-.logo {
 
+.logo {
     width: 200px;
     margin-top: -50px;
 }
