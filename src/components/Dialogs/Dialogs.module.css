@@ -1,4 +1,16 @@
-.wrapper{
-    height: 100vh;
-    padding: 10px;
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  padding: 10px 20px;
+}
+
+.dialog {
+  padding: 5px;
+  /*margin: 5px;*/
+}
+.massage{
+  padding: 3px;
+}
+.dialogsItems .active{
+  color: goldenrod;
 }

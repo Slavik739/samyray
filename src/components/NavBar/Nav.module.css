@@ -12,6 +12,10 @@
   border-bottom: 1px solid bisque;
 
 }
+.item:hover{
+  border-left: 1px solid gold;
+  border-bottom: 1px solid gold;
+}
 
 a {
   text-decoration: none;
@@ -20,6 +24,7 @@ a {
 
 a:hover {
   color: black;
+
 }
 
 .item a.active {
