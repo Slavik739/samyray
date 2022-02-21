@@ -12,7 +12,8 @@
   border-bottom: 1px solid bisque;
 
 }
-.item:hover{
+
+.item:hover {
   border-left: 1px solid gold;
   border-bottom: 1px solid gold;
 }
