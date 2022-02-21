@@ -1,3 +1,10 @@
+.profile__content {
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  height: 400px;
+}
+
 .profile__logo {
   position: absolute;
   top: 50%;

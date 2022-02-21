@@ -4,24 +4,38 @@ import {NavLink} from "react-router-dom";
 
 
 const Dialogs = () => {
-  return (
-      <div className={s.wrapper}>
-        <div className={s.dialogs}>
-          <div className={s.dialogsItems}>
-            <div className={s.dialog + ' ' + s.active}><NavLink to="/dialogs/1">Dmitriy</NavLink></div>
-            <div className={s.dialog}><NavLink to="/dialogs/2">Andrey</NavLink></div>
-            <div className={s.dialog}><NavLink to="/dialogs/3">Svetlana</NavLink></div>
-            <div className={s.dialog}><NavLink to="/dialogs/4">Alisa</NavLink></div>
-            <div className={s.dialog}><NavLink to="/dialogs/5">Petty</NavLink></div>
-          </div>
-        </div>
-        <div className={s.massages}>
-          <div className={s.massage}>Hello</div>
-          <div className={s.massage}>How are you?</div>
-          <div className={s.massage}>I'm see sea</div>
-        </div>
-      </div>
-  )
+	const DialogItem = (props) => {
+		return <div className={s.dialog}>
+			<NavLink to={"/dialogs/" + props.id}
+							 className={props.active === 'active' ? s.active : ""}>
+				{props.name}
+			</NavLink>
+		</div>
+	}
+	const Message = (props) => {
+		return <div className={s.massage}>{props.message}</div>
+	}
+	return (
+		<div className={s.wrapper}>
+			<div className={s.dialogs}>
+				<div className={s.dialogsItems}>
+					<DialogItem name="Dimuch" id="1" active="active"/>
+					<DialogItem name="Andrey" id="2"/>
+					<DialogItem name="Svetlana" id="3"/>
+					<DialogItem name="Alisa" id="4"/>
+					<DialogItem name="Petty~" id="5"/>
+				</div>
+			</div>
+			<div className={s.massages}>
+				<Message message="Hello!"/>
+				<Message message="How are you?"/>
+				<Message message="I'm see sea"/>
+				<Message message="Yo"/>
+				<Message message="Yo"/>
+				<Message message="Yo"/>
+			</div>
+		</div>
+	)
 }
 
 export default Dialogs;

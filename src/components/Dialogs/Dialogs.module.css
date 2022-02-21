@@ -6,15 +6,17 @@
 
 .dialog {
   padding: 5px;
-  /*margin: 5px;*/
 }
-.massage{
+
+.massage {
   padding: 3px;
 }
-.dialogsItems .active{
-  color: goldenrod;
-}
-a{
+
+a {
   text-decoration: none;
-  /*color: #031449;*/
+  color: darkgoldenrod;
+}
+
+a.active {
+  color: red;
 }
