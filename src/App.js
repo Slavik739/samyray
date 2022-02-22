@@ -13,9 +13,10 @@ const App = (p) => {
 				<NavBar/>
 				<div className="app-wrapper-content">
 					<Route path="/profile" render={() =>
-						<Profile postData={p.postData}/>}/>
+						<Profile postData={p.state.profilePage.postData}/>}/>
 					<Route exact path="/dialogs" render={() =>
-						<Dialogs dialogs={p.dialogs} messages={p.messages}/>}/>
+						<Dialogs dialogs={p.state.profilePage.dialogs}
+										 messages={p.state.messagesPage.messages}/>}/>
 				</div>
 			</div>
 		</BrowserRouter>
