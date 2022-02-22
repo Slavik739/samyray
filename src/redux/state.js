@@ -24,5 +24,14 @@ let state = {
 		]
 	}
 }
-	//ничего не делали, просто повторили прошлые темы
+
+export let addPost = (postMessage) => {
+	let newPost = {
+		id: 5,
+		message: postMessage,
+		likesCount: 100
+	}
+	state.profilePage.postData.push(newPost)
+}
+
 export default state;

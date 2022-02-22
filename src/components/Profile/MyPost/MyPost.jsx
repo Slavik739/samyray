@@ -2,14 +2,15 @@ import React from 'react'
 import s from './MyPost.module.css'
 import Post from "./Post/Post";
 
-const MyPost = (props) => {
-	let postsElements = props.postData.map(p => <Post key={p.id} massage={p.message} likesCount={p.likesCount}/>)
+const MyPost = (p) => {
+	let postsElements = p.postData.map(p => <Post key={p.id} massage={p.message} likesCount={p.likesCount}/>)
 
 	let newPostEl = React.createRef();
 
 	const addPost = () => {
-		let textInput = newPostEl.current.value
-		console.log(textInput)
+		let textInput = newPostEl.current.value;
+		p.addPost(textInput);
+		console.log(textInput);
 	}
 
 	return <div className={s.myPostAll}>
